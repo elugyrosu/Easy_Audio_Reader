@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF5D7F8124992569005C0EE6 /* RecordingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D7F8024992569005C0EE6 /* RecordingList.swift */; };
+		FF5D7F83249925C7005C0EE6 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D7F82249925C7005C0EE6 /* Recording.swift */; };
+		FF5D7F8924992659005C0EE6 /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D7F8824992659005C0EE6 /* Date+toString.swift */; };
+		FF5D7F8B24992855005C0EE6 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D7F8A24992855005C0EE6 /* AudioPlayer.swift */; };
+		FF5D7F8D24992ABC005C0EE6 /* RecordingFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D7F8C24992ABC005C0EE6 /* RecordingFetcher.swift */; };
 		FF67E3DA2498093E0043AC4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67E3D92498093E0043AC4A /* AppDelegate.swift */; };
 		FF67E3DC2498093E0043AC4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67E3DB2498093E0043AC4A /* SceneDelegate.swift */; };
 		FF67E3DE2498093E0043AC4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67E3DD2498093E0043AC4A /* ContentView.swift */; };
 		FF67E3E02498093F0043AC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF67E3DF2498093F0043AC4A /* Assets.xcassets */; };
 		FF67E3E32498093F0043AC4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF67E3E22498093F0043AC4A /* Preview Assets.xcassets */; };
 		FF67E3E62498093F0043AC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF67E3E42498093F0043AC4A /* LaunchScreen.storyboard */; };
+		FF67E3EE2498095B0043AC4A /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67E3ED2498095B0043AC4A /* AudioRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF5D7F8024992569005C0EE6 /* RecordingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingList.swift; sourceTree = "<group>"; };
+		FF5D7F82249925C7005C0EE6 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		FF5D7F8824992659005C0EE6 /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
+		FF5D7F8A24992855005C0EE6 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		FF5D7F8C24992ABC005C0EE6 /* RecordingFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingFetcher.swift; sourceTree = "<group>"; };
 		FF67E3D62498093E0043AC4A /* EasyAudioReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyAudioReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF67E3D92498093E0043AC4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF67E3DB2498093E0043AC4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,7 @@
 		FF67E3E22498093F0043AC4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF67E3E52498093F0043AC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF67E3E72498093F0043AC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF67E3ED2498095B0043AC4A /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF5D7F8424992600005C0EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D7F82249925C7005C0EE6 /* Recording.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF5D7F852499260A005C0EE6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D7F8824992659005C0EE6 /* Date+toString.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF5D7F8624992613005C0EE6 /* SupportingView */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D7F8024992569005C0EE6 /* RecordingList.swift */,
+			);
+			path = SupportingView;
+			sourceTree = "<group>";
+		};
+		FF5D7F8724992631005C0EE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF67E3ED2498095B0043AC4A /* AudioRecorder.swift */,
+				FF5D7F8A24992855005C0EE6 /* AudioPlayer.swift */,
+				FF5D7F8C24992ABC005C0EE6 /* RecordingFetcher.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FF67E3CD2498093E0043AC4A = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +102,13 @@
 		FF67E3D82498093E0043AC4A /* EasyAudioReader */ = {
 			isa = PBXGroup;
 			children = (
+				FF5D7F852499260A005C0EE6 /* Extension */,
+				FF5D7F8424992600005C0EE6 /* Model */,
+				FF5D7F8724992631005C0EE6 /* ViewModel */,
+				FF5D7F8624992613005C0EE6 /* SupportingView */,
+				FF67E3DD2498093E0043AC4A /* ContentView.swift */,
 				FF67E3D92498093E0043AC4A /* AppDelegate.swift */,
 				FF67E3DB2498093E0043AC4A /* SceneDelegate.swift */,
-				FF67E3DD2498093E0043AC4A /* ContentView.swift */,
 				FF67E3DF2498093F0043AC4A /* Assets.xcassets */,
 				FF67E3E42498093F0043AC4A /* LaunchScreen.storyboard */,
 				FF67E3E72498093F0043AC4A /* Info.plist */,
@@ -146,8 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5D7F8924992659005C0EE6 /* Date+toString.swift in Sources */,
+				FF5D7F8124992569005C0EE6 /* RecordingList.swift in Sources */,
+				FF5D7F83249925C7005C0EE6 /* Recording.swift in Sources */,
+				FF5D7F8B24992855005C0EE6 /* AudioPlayer.swift in Sources */,
 				FF67E3DA2498093E0043AC4A /* AppDelegate.swift in Sources */,
 				FF67E3DC2498093E0043AC4A /* SceneDelegate.swift in Sources */,
+				FF5D7F8D24992ABC005C0EE6 /* RecordingFetcher.swift in Sources */,
+				FF67E3EE2498095B0043AC4A /* AudioRecorder.swift in Sources */,
 				FF67E3DE2498093E0043AC4A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
