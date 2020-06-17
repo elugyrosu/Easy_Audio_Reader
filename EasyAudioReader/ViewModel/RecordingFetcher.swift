@@ -11,7 +11,6 @@ import Foundation
 class RecordingFetcher: NSObject, ObservableObject {
     @Published public var recordings = [Recording]()
     
-    
     override init() {
         super.init()
         fetchRecordings()
@@ -27,7 +26,6 @@ class RecordingFetcher: NSObject, ObservableObject {
             let recording = Recording(fileURL: audio, createdAt: getCreationDate(for: audio))
             recordings.append(recording)
         }
-        
         recordings.sort(by: { $0.createdAt.compare($1.createdAt) == .orderedAscending})
     }
     

@@ -14,7 +14,6 @@ import AVFoundation
 class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
 
     @Published var isPlaying = false
-    
     var audioPlayer: AVAudioPlayer!
     
     func startPlayback (audio: URL) {

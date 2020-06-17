@@ -19,6 +19,7 @@ class AudioRecorder: ObservableObject {
     private let numberOfSamples: Int
     
     // MARK - Observed Properties
+    
     @Published public var soundSamples: [Float]
     @Published public var isRecording = false
     @Published public var isCapturedMode = false

@@ -98,7 +98,7 @@ struct ContentView: View {
     }
 }
 
-// MARK - Observed Properties
+    // MARK - Preview
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -106,7 +106,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-// MARK - BarView
+    // MARK - BarView
 
 
 struct BarView: View {
@@ -114,10 +114,6 @@ struct BarView: View {
     var body: some View {
         ZStack{
             Rectangle()
-//            RoundedRectangle(cornerRadius: 2)
-//                .fill(LinearGradient(gradient: Gradient(colors: [.black, .red]),
-//                                     startPoint: .top,
-//                                     endPoint: .bottom))
                 .frame(height: value)
         }
     }
